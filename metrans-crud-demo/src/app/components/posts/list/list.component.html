@@ -1,0 +1,22 @@
+<h1>POSTS List</h1>
+
+<a [routerLink]="['/', 'create']" class="btn btn-primary">Create</a>
+<table class="table table-hover table-responsive posts-list">
+    <tbody>
+        <tr>
+            <th class="id">Id</th>
+            <th class="title">Title</th>
+            <th class="body">Body</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let post of posts$ | async">
+            <td>{{post.id}}</td>
+            <td class="ellipsis">{{post.title}}</td>
+            <td class="ellipsis">{{post.body}}</td>
+            <td class="actions">
+                <button type="button" class="btn btn-danger" (click)="delete(post)">Delete</button>
+                <a [routerLink]="['/', 'edit', post.id]" class="btn btn-primary">Edit</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

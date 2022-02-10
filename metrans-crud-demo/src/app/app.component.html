@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="style-selector">
+        <h3>Select background</h3>
+        <button type="button" class="btn btn-secondary" (click)="setColor('#fff')">White</button>
+        <button type="button" class="btn btn-secondary" (click)="setColor('#ff000050')">Red</button>
+        <button type="button" class="btn btn-secondary" (click)="setColor('#0000ff50')">Blue</button>
+    </div>
+    <app-layout-wrapper [background]="background">
+        <router-outlet></router-outlet>
+    </app-layout-wrapper>
+
+</div>

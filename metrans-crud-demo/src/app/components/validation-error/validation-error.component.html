@@ -1,0 +1,5 @@
+<div *ngIf="this.field.invalid && this.field.touched" class="text-danger">
+    <div *ngIf="this.field.errors.required">
+        <span>This field is required</span>
+    </div>
+</div>

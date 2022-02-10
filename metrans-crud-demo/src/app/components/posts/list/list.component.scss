@@ -1,0 +1,25 @@
+.posts-list {
+    max-width: 500px;
+}
+
+table {
+    table-layout: fixed;
+}
+
+th.id {
+    width: 40px;
+}
+
+th.title {
+    width: 100px;
+}
+
+th.body {
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+a.btn {
+    margin-left: 0.3em;
+}

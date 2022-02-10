@@ -1,0 +1,17 @@
+<div class="form-row" *ngIf="this.value">
+    <div class="form-group col-12 col-md-6">
+        <label for="title">Title</label>
+        <input #title="ngModel" [(ngModel)]="this.value.title" type="text" class="form-control" id="title" name="title"
+            placeholder="Title" required maxlength="200">
+        <validation-error [field]="title">
+        </validation-error>
+    </div>
+</div>
+
+<div class="form-row" *ngIf="this.value">
+    <div class="form-group col-12">
+        <label for="note">Body</label>
+        <textarea name="body" class="form-control" placeholder="Body" [(ngModel)]="this.value.body"
+            maxlength="4000"></textarea>
+    </div>
+</div>

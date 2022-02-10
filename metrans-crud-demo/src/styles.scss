@@ -1,9 +1,9 @@
-body {
-    padding-top: 3em;
-}
-
 .ellipsis {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;    
+}
+
+.crud-form {
+    max-width: 500px;
 }

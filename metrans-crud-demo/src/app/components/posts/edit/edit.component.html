@@ -1,11 +1,11 @@
-<div class="inner-container content-row container-content">
+<div class="crud-form">
     <h2>Edit post</h2>
 
     <form (ngSubmit)="save()" #editPostForm="ngForm" *ngIf="this.post">
         <app-post-editor #postEditor="ngModel" name="postEditor" [(ngModel)]="this.post">
         </app-post-editor>
         <div class="d-flex justify-content-end mt-2">
-            <a class="btn btn-secondary mr-2" [routerLink]="['/list']">Cancel</a>
+            <a class="btn btn-secondary me-2" [routerLink]="['/list']">Cancel</a>
             <button type="submit" class="btn btn-primary" [disabled]="!editPostForm.form.valid">Save</button>
         </div>
     </form>
